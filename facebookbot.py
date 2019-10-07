@@ -59,6 +59,8 @@ def parse_user_message(user_text):
 		return getOneOf(botResp.GREETING)
 	elif user_text in botInp.BAD_WORDS:
 		return getOneOf(botResp.BAD_WORDS_RESPONSES)
+	else:
+		return "Sorry! i am not able to understand"
 	
 
 def getOneOf(arr):
